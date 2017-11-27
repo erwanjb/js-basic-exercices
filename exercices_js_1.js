@@ -6,18 +6,51 @@
 // Ecrire une fonction 'hello' qui affiche dans la console "Hello World!"
 
 function hello() {
-	// write your code HERE
+	console.log("Hello World!");
 };
 
+hello();
+
 // ----
+var a=12,b=4,c=10;
 // écrire des fonctions suivante:
 // addition(a, b)
-// soustraction(a, b)
-// multiplication(a, b)
-// division(a, b)
-// concatenation(str1, str2)
-// moyenne(a1, a2, a3)
+function addition(a,b){
+	return a+b;
+}
 
+console.log(addition(a,b));
+// soustraction(a, b)
+function soustraction(a,b){
+	return a-b;
+}
+
+console.log(soustraction(a,b));
+
+// multiplication(a, b)
+function multiplication(a,b){
+	return a*b;
+}
+
+console.log(multiplication(a,b));
+
+// division(a, b)
+function division(a,b){
+	return a/b;
+}
+console.log(division(a,b));
+
+// concatenation(str1, str2)
+function concatenation(str1,str2){
+	return str1+str2;
+}
+console.log(concatenation("toto","tata"));
+
+// moyenne(a1, a2, a3)
+function moyenne(a1,a2,a3){
+	return (a1+a2+a3)/3;
+}
+console.log(moyenne(a,b,c));
 // Chaque fonction devra effectuer l'opération correspondant à son nom, et renvoyer le résultat. 
 // Celui-ci sera stocké dans une variable, qui sera ensuite affichée dans la console
  
@@ -25,9 +58,12 @@ function hello() {
 // Déclarer deux variables a et b, de valeurs respectives 5 et 12
 // A l'aide d'une variable intermédiaire, inverser les deux valeurs pour que a ait pour valeur 12 et b pour valeur 5
 // Afficher le résultat de a et b dans la console sous la forme d'une phrase: "A vaut : xxx et B vaut yyy"
-var a, b;
+var a=5, b=12;
 // WRITE YOUR CODE HERE
-
+var c=a;
+a=b;
+b=c;
+console.log("A vaut : "+a+" B vaut : "+b);
 // ----
 // Ecrire une fonction 'isDivisibleBy5' qui reçoit un nombre en paramètre, et qui vérifie que ce nombre est divisible par 5.
 // Cette fonction doit renvoyer un booléen
